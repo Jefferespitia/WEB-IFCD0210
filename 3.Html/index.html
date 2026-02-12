@@ -1,0 +1,147 @@
+<!-- HyperText -->
+<!-- Markup Language -> Definir la estructura de un documento -->
+<!-- CSS -> Cascading Style Sheets -> Definir la apariencia de un documento -->
+<!-- Js -> JavaScript -> Definir el comportamiento de un documento -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Esta es mi primera página web">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Jefferson Espitia">
+  <meta name="generator" content="Visual Studio Code">
+  <meta name="robots" content="index, follow">
+
+  <title>Página web</title>
+  <link rel="shortcut icon" href="./moose.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <script src="./index.js" defer></script>
+  <script>
+    console.log('Inline script loaded');
+  </script>
+</head>
+
+<!-- Etiquetas de sectioning:
+1. body
+2. section
+3. header
+4. footer
+5. article
+6. nav
+7. aside
+8. h1, h2, h3, h4, h5, and h6
+9. hgroup
+10.address
+-->
+
+<!-- Etiquetas de agrupamiento:
+1. p
+2. hr
+3. pre
+4. blockquote
+5. ol and ul
+6. menu
+7. li
+8. dl, dt and dd
+9. figure and figcaption
+10. main
+11. div -->
+
+<header>
+    <hgroup>
+      <h1>Porfolio de Jefferson Espitia</h1>
+      <p>Desarrollador web</p>
+    </hgroup>
+    <nav>
+      <menu>
+        <li><a href="#personal-info">Información personal</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </menu>
+    </nav>
+  </header>
+
+  <main>
+    <section id="personal-info" aria-label="Información personal">
+      <h2>Información personal</h2>
+      <p>Soy un desarrollador web.</p>
+      <p lang="en">I am a web developer.</p>
+      <div>
+        <img src="./web-612x612.jpg" alt="Representación simbólica de una web" width="200">
+      </div>
+    </section>
+    <section id="projects" aria-label="Proyectos">
+      <header>
+        <h2>Proyectos</h2>
+        <nav>
+          <ul>
+            <li><a href="#project1">Proyecto 1</a></li>
+            <li><a href="#project2">Proyecto 2</a></li>
+          </ul>
+        </nav>
+      </header>
+      <article id="project1">
+        <h3>Proyecto 1: Angular</h3>
+        <blockquote cite="https://angular.dev/" lang="en">
+          The framework for building scalable web apps with confidence<br>
+          <cite>https://angular.dev/</cite>
+        </blockquote>
+        <p>Descripción del proyecto 1</p>
+      </article>
+      <article id="project2">
+        <h3>Proyecto 2: código en JS</h3>
+        <p>Descripción del proyecto 2</p>
+        <hr>
+        <pre>
+          const x = 10;
+          const y = 20;
+          console.log(x * y);
+        </pre>
+        <figure>
+          <figcaption>Código en JavaScript</figcaption>
+          <img src="./project.sample.png" alt="" width="200">
+        </figure>
+        <p>
+          Este proyecto utiliza JavaScript para realizar cálculos simples.
+        </p>
+        <dl>
+          <dt>Lenguaje</dt>
+          <dd>JavaScript</dd>
+          <dt>Funcionalidad</dt>
+          <dd>Cálculos matemáticos</dd>
+        </dl>
+      </article>
+      <aside>
+        <h2>Tecnologías</h2>
+        <p><strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong></p>
+      </aside>
+    </section>
+    <section id="contact" aria-label="Contacto">
+      <h2>Contacto</h2>
+      <p>¿Quieres contactar conmigo?</p>
+    </section>
+    <aside>
+      <h2>Información adicional</h2>
+      <p>Aquí hay algunos datos adicionales sobre mí.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mi primer página web</p>
+    <address><a href="mailto:jefferespitia@gmail.com">jefferespitia@gmail.com</a></address>
+    <ul>
+      <li><a href="https://twitter.com/jefferespitia">Twitter</a></li>
+      <li><a href="https://linkedin.com/in/jefferespitia">LinkedIn</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

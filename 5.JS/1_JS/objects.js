@@ -37,3 +37,8 @@ for (const key in user) {
 // // Object.value(user)
 // console.log(Object.entries(user))
 
+const userContacts = {
+    c1: 'Luis',
+    c2: 'Ramón',
+    c3: 'Rosa'
+}

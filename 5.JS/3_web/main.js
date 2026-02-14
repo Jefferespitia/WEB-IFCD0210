@@ -8,10 +8,11 @@ const handleChange = (event) => {
 
 const handleDialogMenu = (event) => {
     console.log("Click", event);
-
-
+    const current = event.currentTarget
+    event.stopPropagation()
+    console.log(current)
     const menuDialogElement = document.querySelector("#menu-dialog");
-    if (event.currentTarget.localName === "a") {
+    if (current.localName === "a") {
         event.preventDefault();
         menuDialogElement.showModal();
     } else {
@@ -27,9 +28,8 @@ export function main() {
     
     // Menu (Navegación)
     const menuIconElement = document.querySelector("#menu-icon");
-    const closeDialogElement = document.querySelector("#menu-dialog button");
     const menuDialogElement = document.querySelector("#menu-dialog menu");
     menuIconElement.addEventListener("click", handleDialogMenu);
-    closeDialogElement.addEventListener("click", handleDialogMenu);
+    document.body.addEventListener("click", handleDialogMenu);
     menuDialogElement.addEventListener("click", handleDialogMenu);
 }

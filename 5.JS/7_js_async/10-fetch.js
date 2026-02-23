@@ -1,25 +1,26 @@
-async function getUsers() {
+function getUsers() {
     const URL = 'https://dummyjson.com/users';
 
-    const response = await fetch(URL, {
+    return fetch(URL, {
         method: 'GET',
         headers: {},
+    })
+        .then((response) => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error(response.status + ' ' + response.statusText);
+            }
+        })
+        .then((data) => {
+            console.log(data.users.length);
+            return data.users;
+        });
+}
+
+getUsers()
+    .then((users) => console.log(users))
+    .catch((error) => console.log(error.message))
+    .finally(() => {
+        console.log('Terminando correctamente');
     });
-
-    console.log(response)
-    let data = '';
-    if (response.ok) {
-        data = await response.json();
-    } else {
-        throw new Error(`${response.status} - ${response.statusText}`);
-    }
-    console.log(data.users.length);
-    return data.users;
-}
-
-try {
-    const users = await getUsers();
-    console.log(users[0]);
-} catch (error) {
-    console.log(error.message);
-}

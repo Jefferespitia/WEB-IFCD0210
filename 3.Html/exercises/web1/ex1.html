@@ -1,77 +1,106 @@
-<!-- # Exercise 1
-
-- Crear un documento HTML con la estructura básica (sample1.html)
-- Agregar un comentario al inicio del documento
-- Agregar un título a la página
-- Agregar varios párrafo
-- Agregar un titulo a las listas siguiente
-- Agregar una lista desordenada con 3 elementos
-- Agrega una lista desordenada con 3 elementos cada uno
+<!-- 
+-[x] Crear un documento HTML con la estructura básica (sample1.html)
+-[x] Agregar un comentario al inicio del documento
+-[x] Agregar un título a la página (h1)
+-[x] Agregar varios párrafo
+-[x] Agregar un titulo a las listas siguiente
+-[x] Agregar una lista desordenada con 3 elementos
+-[x] Agrega una lista desordenada con 3 elementos cada uno
   con una lista anidada con 3 elementos
-- Agrega un título al resto de la página
-- Agregar alguna imagen con un texto alternativo
-- Agregar un titulo a la lista siguiente
+-[x] Agrega un título al resto de la página
+-[x] Agregar alguna imagen con un texto alternativo
+-[x] Agregar un titulo a la lista siguiente
   dentro de la sección de imágenes
-- Agregar una lista ordenada con 3 elementos, que sean enlaces a
-- Google
-- Bing
-- DuckDuckGo
-- Agregar un párrafo con los mismos enlaces
+-[x] Agregar una lista ordenada con 3 elementos, que sean enlaces a
+    - Google
+    - Bing
+    - DuckDuckGo
+-[x] Agregar un párrafo con los mismos enlaces
   asociados a las imagen de cada buscador
-- Validar el documento con el servicio de validación de W3C -->
+-[x] Validar el documento con el servicio de validación de W3C 
+-->
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Pagina web</title>
-    </head>
 
-    <body>
-        <h1>Club lectura</h1>
-        <h2>Club lectura</h2>
-        <p>Libro Efecto compuesto</p>
-        <ol>
-            <li>Jefferson Espitia</li>
-        </ol>
-        <img
-            src="./club_lectura.png"
-            alt="grupo lectura"
-            width="300"
-            height="300"
-        />
-        <div>
-            <li><a href="https://www.google.com" target="_blank">Google</a></li>
-        </div>
-        <button>>Enviar</button>
-        <h2>Club lectura</h2>
-        <ol>
-            <li>Steven Perez</li>
-        </ol>
-        <img
-            src="https://eventoociomadrid.com/wp-content/uploads/2022/09/Como-organizar-un-club-de-lectura-768x480.png"
-            alt="grupo lectura"
-            width="300"
-            height="300"
-        />
-        <div>
-            <li><a href="https://www.bing.com" target="_blank">Bing</a></li>
-                >Visitar pagina club de lectura</a>
-        </div>
-        <button>>Enviar</button>
-        <h2>Club lectura</h2>
-        <ol>
-            <li>Stefhania Perez</li>
-        </ol>
-        <img
-            src="./club_lectura.png"
-            alt="grupo lectura"
-            width="300"
-            height="300"
-        />
-        <div>
-            <li><a href="https://duckduckgo.com" target="_blank">DuckDuckGo</a></li>
-        </div>
-        <button>>Enviar</button>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1</title>
+</head>
+
+<body>
+
+  <hgroup>
+    <h1>Ejercicio 1 de HTML</h1>
+    <p>Primer día de clase</p>
+  </hgroup>
+  
+  <div lang="zxx">
+    <p><strong>Lorem ipsum</strong> dolor sit amet consectetur, adipisicing elit. Quod eos, atque aut exercitationem
+      illum quasi corrupti
+      eius eaque maxime dicta. Doloremque veritatis exercitationem itaque at nobis ipsum, aliquam praesentium aut.</p>
+    <p>Quisquam aspernatur explicabo nulla ab aliquam enim, non dolor, reiciendis qui, modi hic. Aliquam iure, dolorem
+      exercitationem laboriosam rem voluptatum debitis reiciendis, dicta dignissimos aperiam fugit sunt quis sapiente
+      assumenda.</p>
+    <p>Sapiente, dignissimos quis! Debitis maiores ullam adipisci, nisi quam dicta illum ad saepe reiciendis vero
+      similique atque delectus aut id veritatis aliquid ipsam exercitationem earum consequuntur error. Explicabo,
+      dicta autem.</p>
+    <p>Nihil omnis soluta sed animi vero cupiditate necessitatibus placeat, aliquam earum non eaque quidem ab voluptate
+      molestiae nobis debitis libero consectetur quisquam doloremque fuga reprehenderit molestias! Minima saepe error
+      animi?</p>
+    <p>Consequatur delectus voluptatum veniam temporibus, rerum inventore officiis quisquam numquam, illo similique iure
+      doloribus dignissimos distinctio quae, minus pariatur aperiam quaerat explicabo ea. Cupiditate quo a nobis magni
+      obcaecati non.</p>
+  </div>
+  <h2>Usuarios</h2>
+  <h3>Lista de usuarios</h3>
+  <ul>
+    <li>Usuario 1</li>
+    <li>Usuario 2</li>
+    <li>Usuario 3</li>
+  </ul>
+  <h3>Pólitica de usuarios</h3>
+  <p>La política de usuarios establece las reglas y condiciones para el uso del sistema.</p>
+
+  <h2>Productos</h2>
+  <ol>
+    <li>Producto 1</li>
+    <li>Producto 2
+      <ul>
+        <li>Subproducto 2.1</li>
+        <li>Subproducto 2.2</li>
+        <li>Subproducto 2.3</li>
+      </ul>
+    </li>
+    <li>Producto 3
+      <ul>
+        <li>Subproducto 3.1</li>
+        <li>Subproducto 3.2</li>
+        <li>Subproducto 3.3</li>
+
+        <li>Subproducto 3.4</li>
+        <li>Subproducto 3.5</li>
+        <li>Subproducto 3.6</li>
+      </ul>
+    </li>
+
+  </ol>
+  <h2>Imágenes de perros</h2>
+  <img src="https://placedog.net/400x200" alt="Perro random">
+  <img src="https://placedog.net/401x200" alt="Perro random">
+  <h3>Lista de enlaces</h3>
+  <ol>
+    <li><a href="https://www.google.com" target="_blank">Google</a></li>
+    <li><a href="https://www.bing.com" target="_blank">Bing</a></li>
+    <li><a href="https://duckduckgo.com" target="_blank">DuckDuckGo</a></li>
+  </ol>
+  <p>Enlaces a buscadores:</p>
+  <p> Podemos hacer nuestras búsquedas en
+    <a href="https://www.google.com" target="_blank" title="Google"><img src="./logo-google-svgrepo-com.svg" alt="Google" width="20"></a>
+    <a href="https://www.bing.com" target="_blank" title="Bing"><svg height="20px" width="20px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="bing_SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="bing_SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <polygon class="st0" points="166.685,38.682 52.904,0 52.904,422.118 166.685,321.987 "></polygon> <polygon class="st0" points="206.501,133.117 253.157,249.166 319.397,270.361 56.324,431.215 170.095,512 459.096,336.78 459.096,216.17 "></polygon> </g> </g></svg></a>
+    <a href="https://duckduckgo.com" target="_blank" title="DuckDuckGo"><svg  height="20px" width="20px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="duck_SVGRepo_bgCarrier" stroke-width="0"></g><g id="duck_SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="duck_SVGRepo_iconCarrier"><path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M96 170c40.869 0 74-33.131 74-74 0-40.87-33.131-74-74-74S22 55.13 22 96c0 40.869 33.131 74 74 74Z"></path><path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M80 166 64.844 94.354C61.318 77.686 74.033 62 91.07 62v0c12.301 0 23.023 8.372 26.006 20.305L118 86c6 28-28 14-20 40s16 38 16 38M90 62c-2-8-10-12-18-12"></path><path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M118 100c6 0 14-2 20-6m-34 18c6 4 16 6 27 4"></path></g></svg></a>
+  </p>
+</body>
+
 </html>

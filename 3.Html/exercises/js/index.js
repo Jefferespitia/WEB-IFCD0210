@@ -1,1 +1,1 @@
-console.log("Index JS loaded");
+console.log("Hola desde main.js");

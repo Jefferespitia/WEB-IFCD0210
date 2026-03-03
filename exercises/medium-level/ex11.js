@@ -49,3 +49,29 @@ console.log(gameRPS("patata"));
 console.log(gameRPS("piedra"));
 console.log(gameRPS("papel"));
 console.log(gameRPS("tijeras"));
+
+
+function jugarPiedraPapelTijera(opcionJugador) {
+    const opciones = ["piedra", "papel", "tijera"];
+    
+    // Elección aleatoria de la máquina
+    const opcionMaquina = opciones[Math.floor(Math.random() * 3)];
+
+    console.log("Jugador eligió: " + opcionJugador);
+    console.log("Máquina eligió: " + opcionMaquina);
+
+    if (opcionJugador === opcionMaquina) {
+        console.log("¡Es un empate!");
+    } else if (
+        (opcionJugador === "piedra" && opcionMaquina === "tijera") ||
+        (opcionJugador === "papel" && opcionMaquina === "piedra") ||
+        (opcionJugador === "tijera" && opcionMaquina === "papel")
+    ) {
+        console.log("¡Ganaste! 🎉");
+    } else {
+        console.log("Perdiste 😢");
+    }
+}
+
+// Ejemplo
+jugarPiedraPapelTijera("piedra");
